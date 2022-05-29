@@ -8,7 +8,7 @@ pip3 install -r requirements.txt
 ```
 #### Running a file:
 ```
-python3 *.py
+python3 fileName.py
 ```
 #### Three_player_binary:
 Files should be run in the following order: three_player_polytope_extrema.py then filter_three_player_strategies.py then max_gap.py. 
