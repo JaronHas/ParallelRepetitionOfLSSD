@@ -84,7 +84,7 @@ def three_player_binary_LP_pulp(det_strats, ns_strats, set_to_equality):
     model += obj_func
 
     model.solve(PULP_CBC_CMD(msg=0))
-    # print(model.status, LpStatus[model.status], model.objective.value())
+    print(model.status, LpStatus[model.status], model.objective.value())
     # If no solution was found, model.objective.value() is 0, so that causes no
     # problems.
     return model.objective.value()

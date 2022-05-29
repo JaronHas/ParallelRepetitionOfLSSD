@@ -34,7 +34,7 @@ def filter_three_players():
     all_relevant_strats = []
     with open("three_player_vertices.txt") as strategies:
         for i, line in enumerate(strategies):
-            # We skip the first 2 and last line, since they contain
+            # We skip the first 3 and last line, since they contain
             # irrelevant information.
             if i >= 3 and line != "end":
                 # We skip the first 2 characters, since they say whether

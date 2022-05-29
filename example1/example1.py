@@ -46,14 +46,19 @@ def create_graph(n, start, stop, step, nosignalling=True, classical=True):
     ns_probs = []
     cl_probs = []
     for alpha in alphas:
-        ns_probs.append(ncopies(alpha, n))
-        cl_probs.append(find_max_win_prob(alpha, n))
+        if nosignalling:
+            ns_probs.append(ncopies(alpha, n))
+        if classical:
+            cl_probs.append(find_max_win_prob(alpha, n))
     if classical:
-        plt.plot(alphas, cl_probs, color='b')
+        plt.plot(alphas, cl_probs, color='b', label="Classical")
     if nosignalling:
-        plt.plot(alphas, ns_probs, color='r')
-
+        plt.plot(alphas, ns_probs, color='r', label="no-signalling")
+    plt.title(f"Classical and/or no-signalling winning probabilities for {n} copies")
+    plt.xlabel("Alpha (error probability)")
+    plt.ylabel("winning probability")
     plt.show()
 
 if __name__ == "__main__":
     create_graph(2, 0, 0.5, 0.01)
+    create_graph(3, 0.2, 0.5, 0.005, classical=False)
