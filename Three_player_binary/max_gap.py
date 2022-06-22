@@ -44,7 +44,6 @@ def three_player_binary_LP_pulp(det_strats, ns_strats, set_to_equality):
     #  - sum_x,a,b,c Q(x,x,x|a,b,c)*P(x,a,b,c)
     for strategy in det_strats:
         # We loop over all bitstrings xabc and calculate the sum above.
-        # (converting to and from binary in variables might be unnecessary.)
         model += (max_det -
                   sum([strategy[int('{0:04b}'.format(i)[0]*3 +
                                     '{0:04b}'.format(i)[1] +
@@ -84,7 +83,7 @@ def three_player_binary_LP_pulp(det_strats, ns_strats, set_to_equality):
     model += obj_func
 
     model.solve(PULP_CBC_CMD(msg=0))
-    print(model.status, LpStatus[model.status], model.objective.value())
+    print(f"Solution status: {LpStatus[model.status]}, gap:, {model.objective.value()}")
     # If no solution was found, model.objective.value() is 0, so that causes no
     # problems.
     return model.objective.value()
@@ -120,4 +119,4 @@ def max_gap_three_player_binary():
     return max_gap
 
 if __name__ == "__main__":
-    print(max_gap_three_player_binary())
+    print("Largest gap:", max_gap_three_player_binary())

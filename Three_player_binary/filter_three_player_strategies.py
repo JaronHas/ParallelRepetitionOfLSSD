@@ -1,5 +1,5 @@
 # Running this file creates 2 files: one with all relevant no-signalling
-# strategies, according to corollary 4.1, and one with all relevant deterministic
+# strategies, according to corollary 4.3, and one with all relevant deterministic
 # strategies, according to lemma 4.1. The deterministic strategies in this file
 # are also described by a conditional distribution instead of 3 binary functions.
 
@@ -10,7 +10,7 @@ import numpy as np
 def is_relevant_three_player(strategy):
     """
     This function checks whether a given no-signalling strategy is relevant
-    according to corollary 4.1 (we have d = 2), by checking if there
+    according to corollary 4.3 (we have d = 2), by checking if there
     exist x,a,b,c in {0,1} such that Q(x,x,x|a,b,c) > 1/2. (We use the same
     ordering as for finding polytope extrema.)
     """
