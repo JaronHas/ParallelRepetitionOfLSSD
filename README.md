@@ -19,7 +19,7 @@ max_gap.py requires relevant_det_strats.txt and three_player_all_relevant_strats
 Keep in mind that running three_player_polytope_extrema.py takes a long time (about 30 minutes for me).
 
 #### example1:
-To recreate the figures in the paper, run example1.py.
+To recreate the figures in my thesis, run example1.py.
 It is possible to create different figures, by changing the parameters passed to create_graph().
 It is also possible to find classical and no-signaling winning probabilities for specific alpha and number of copies by running either classical.py or 
 nosignalling.py (and changing the parameters within those files).
