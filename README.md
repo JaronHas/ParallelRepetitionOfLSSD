@@ -25,4 +25,4 @@ It is also possible to find classical and no-signaling winning probabilities for
 nosignalling.py (and changing the parameters within those files).
 
 #### NPA_hierarchy_BSC_Game.py
-Just run the file after installing the necessary dependencies.
+We implement the level `1+AB' of the NPA hierarchy to see that the binary simmetric channel game for local simultaneus state discrimination has no quantum advantage when played twice in parallel.
