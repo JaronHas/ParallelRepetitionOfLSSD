@@ -1,5 +1,5 @@
-# Jaron_Has_Bachelor_Project
-This is repository consists of all the code used for my bachelor's thesis. Three_player_binary corresponds to chapter 4 and example1 to chapter 5.
+# ParallelRepetitionOfLSSD
+This is repository consists of all the code used for the paper "Parallel Repetition of LSSD". The folder "example1" corresponds to Section 4 and so does "....py", the folder "Three_player_binary" corresponds to Section 6.
 
 ## Usage:
 #### Install dependencies:
@@ -23,3 +23,5 @@ To recreate the figures in my thesis, run example1.py.
 It is possible to create different figures, by changing the parameters passed to create_graph().
 It is also possible to find classical and no-signaling winning probabilities for specific alpha and number of copies by running either classical.py or 
 nosignalling.py (and changing the parameters within those files).
+
+#### 
