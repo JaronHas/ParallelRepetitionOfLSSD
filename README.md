@@ -1,5 +1,5 @@
 # ParallelRepetitionOfLSSD
-This is repository consists of all the code used for the paper "Parallel Repetition of LSSD". The folder "example1" corresponds to Section 4 and so does "....py", the folder "Three_player_binary" corresponds to Section 6.
+This is repository consists of all the code used for the paper "Parallel Repetition of LSSD". The folder "example1" corresponds to Section 4 and so does "NPA_hierarchy_BSC_Game.py", the folder "Three_player_binary" corresponds to Section 6.
 
 ## Usage:
 #### Install dependencies:
@@ -24,4 +24,5 @@ It is possible to create different figures, by changing the parameters passed to
 It is also possible to find classical and no-signaling winning probabilities for specific alpha and number of copies by running either classical.py or 
 nosignalling.py (and changing the parameters within those files).
 
-#### 
+#### NPA_hierarchy_BSC_Game.py
+Just run the file after installing the necessary dependencies.
