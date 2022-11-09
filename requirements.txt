@@ -2,3 +2,6 @@ pycddlib
 PuLP
 numpy
 matplotlib
+Mosek
+sympy
+ncpol2sdpa
