@@ -1,16 +1,16 @@
 # Parallel repetition of LSSD
 This is repository consists of all the code used for the paper ["Parallel repetition of local simultaneous state discrimination"](https://arxiv.org/abs/2211.06456). The folder **Example 1** corresponds to Section 4 and so does `NPA_hierarchy_BSC_Game.py`, the folder **Three-party binary LSSD** corresponds to Appendix C.
 
-## Usage:
-#### Install dependencies:
+## Usage
+#### Install dependencies
 ```bash
 pip3 install -r requirements.txt
 ```
-#### Running a file:
+#### Running a file
 ```bash
 python3 fileName.py
 ```
-#### Three-party binary LSSD:
+#### Three-party binary LSSD
 Files should be run in the following order:
 1. `three_player_polytope_extrema.py` - computes the extremal points of the binary three-party no-signalling polytope,
 2. `filter_three_player_strategies.py` - uses symmetry to reduce the number of relevant classical and no-signalling strategies,
@@ -22,7 +22,7 @@ It is also possible to run the files separately as long as the required `*.txt` 
 
 Keep in mind that running `three_player_polytope_extrema.py` takes a long time (about 30 minutes).
 
-#### Example 1:
+#### Example 1
 To recreate the figures, run `example1.py`.
 It is also possible to create different figures by changing the parameters passed to `create_graph()`.
 It is also possible to find classical and no-signaling winning probabilities for specific alpha and number of copies by running either `classical.py` or `nosignalling.py` (and changing the parameters within those files).
@@ -30,6 +30,7 @@ It is also possible to find classical and no-signaling winning probabilities for
 The classical value for two and three repetitions of the game is obtained in
 * `BSC classical strategy n=2.nb` (2 repetitions),
 * `BSC classical strategy n=3.nb` (3 repetitions),
+
 while the solutions of the corresponding no-signalling linear programs are verified in
 * `BSC no-signalling strategy n=2.nb` (2 repetitions),
 * `BSC no-signalling strategy n=3.nb` (3 repetitions).
